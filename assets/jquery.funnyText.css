@@ -1,0 +1,40 @@
+/**
+ * A WordPress plugin for Create funny and crazy moving texts in a simple way.
+ * @package     funny-text
+ * @author      anshuln90
+ * @author_url  http://anshullabs.xyz
+ * @copyright   Copyright (c) 2016 Anshul G.
+*/
+.charWrap {
+    display:inline-block;
+    position:relative;
+    overflow: hidden;
+}
+.funnyText span.left, 
+.funnyText span.right,
+.funnyText span.top,
+.funnyText span.bottom {
+    position:absolute;
+}
+.funnyText .charWrap {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;/** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out;/** Firefox **/
+    -o-transition: all 0.4s ease-in-out;/** Opera **/
+}
+.funnyText .charWrap .top {
+    top:0;
+}
+.funnyText .charWrap .left {
+    left:0;
+}
+.funnyText .charWrap .right {
+    right:0;
+}
+.funnyText .charWrap .bottom {
+    bottom:0;
+}
+.funnyText .character {
+    overflow:hidden;
+    display:inline-block;
+}
